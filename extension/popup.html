@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatsApp Logout Blocker</title>
+    <style>
+        body {
+            width: 250px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            padding: 15px;
+            background-color: #f0f2f5;
+            color: #3b3b3b;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .header img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 16px;
+            margin: 0;
+            color: #075e54;
+        }
+        .status {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .status-label {
+            color: #667781;
+        }
+        .status-value {
+            font-weight: bold;
+        }
+        .active { color: #25d366; }
+        .footer {
+            font-size: 10px;
+            color: #8696a0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Logout Blocker</h1>
+    </div>
+    <div class="status">
+        <div class="status-item">
+            <span class="status-label">Service:</span>
+            <span class="status-value active" id="serviceStatus">Running</span>
+        </div>
+        <div class="status-item">
+            <span class="status-label">Last Pulse:</span>
+            <span class="status-value" id="lastPulse">---</span>
+        </div>
+    </div>
+    <div class="footer">
+        Automatically keeping your WhatsApp Web session active.
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

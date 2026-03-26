@@ -1,0 +1,6 @@
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore builds and zip files
+*.zip
+*.tar.gz
